@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Been Kosova - Track Your Visits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landing-page">
+        <div class="nature-overlay"></div>
+        <div class="landing-content">
+            <h1 class="landing-title">Been Kosova</h1>
+            <p class="landing-subtitle">See where you have been</p>
+            <button class="continue-button" id="continue-button">Continue</button>
+        </div>
+        <div class="nature-elements">
+            <div class="mountain"></div>
+            <div class="mountain mountain-2"></div>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+    </div>
+
+    <script>
+        // Landing page functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const continueButton = document.getElementById('continue-button');
+
+            continueButton.addEventListener('click', function () {
+                // Navigate to app page
+                window.location.href = 'app.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

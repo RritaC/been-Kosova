@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Been Kosova - Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Been Kosova</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Visited:</span>
+                    <span class="stat-value" id="visited-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="total-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completion:</span>
+                    <span class="stat-value" id="completion-rate">0%</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="legend-container" id="legend-container"></div>
+
+        <div class="map-container">
+            <svg id="kosovo-map"></svg>
+        </div>
+
+        <div class="city-list">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="cities-section">
+                <h2 class="cities-header" id="cities-header">
+                    Cities
+                    <svg class="header-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M6 9L1 4h10z" fill="currentColor" />
+                    </svg>
+                </h2>
+                <div class="cities-grid" id="cities-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="kosovo-regions.js"></script>
+    <script src="kosovo-polygons.js"></script>
+    <script src="script-image-map.js"></script>
+</body>
+
+</html>
